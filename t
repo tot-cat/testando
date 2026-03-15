@@ -1,284 +1,129 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oferta Especial - Página Oficial</title>
+    <title>Influente Summit 2024 - Transforme Sua Presença Digital</title>
+    <meta name="description" content="Descubra o Influente Summit 2024: o maior evento de marketing digital e influência do Brasil. Aprenda com os maiores experts e transforme sua carreira.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* --- RESET E ESTILOS GERAIS --- */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            background-color: #121212; /* Fundo escuro igual ao site */
-            color: #ffffff;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-
-        /* --- CABEÇALHO --- */
-        header {
-            padding: 15px 0;
-            border-bottom: 1px solid #333;
-            margin-bottom: 30px;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #f1c40f; /* Amarelo destaque */
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        /* --- MANCHETE (HEADLINE) --- */
-        .headline {
-            margin-bottom: 30px;
-        }
-
-        .headline h1 {
-            font-size: 2.5rem;
-            color: #fff;
-            margin-bottom: 10px;
-            line-height: 1.2;
-        }
-
-        .headline span {
-            color: #f1c40f; /* Destaque amarelo */
-        }
-
-        .sub-headline {
-            font-size: 1.2rem;
-            color: #ccc;
-        }
-
-        /* --- ÁREA DO VÍDEO --- */
-        .video-wrapper {
-            position: relative;
-            padding-bottom: 56.25%; /* Proporção 16:9 */
-            height: 0;
-            background: #000;
-            border: 2px solid #333;
-            border-radius: 10px;
-            margin-bottom: 40px;
-            box-shadow: 0 0 20px rgba(241, 196, 15, 0.2);
-        }
-
-        .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        /* --- BOTÃO DE COMPRA (CTA) --- */
-        .cta-section {
-            margin: 40px 0;
-        }
-
-        .btn-cta {
-            display: inline-block;
-            background-color: #27ae60; /* Verde compra */
-            color: white;
-            font-size: 1.5rem;
-            font-weight: bold;
-            padding: 20px 40px;
-            border-radius: 50px;
-            text-decoration: none;
-            box-shadow: 0 0 15px rgba(39, 174, 96, 0.6);
-            animation: pulse 2s infinite;
-            width: 100%;
-            max-width: 500px;
-        }
-
-        .btn-cta:hover {
-            background-color: #2ecc71;
-        }
-
-        .btn-cta small {
-            display: block;
-            font-size: 0.9rem;
-            font-weight: normal;
-            margin-top: 5px;
-        }
-
-        /* --- GARANTIA --- */
-        .guarantee {
-            margin: 40px 0;
-            padding: 20px;
-            border: 1px dashed #555;
-            border-radius: 10px;
-            display: inline-block;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
         
-        .guarantee img {
-            max-width: 100px;
-            margin-bottom: 10px;
-        }
-
-        /* --- DEPOIMENTOS --- */
-        .testimonials {
-            background-color: #1e1e1e;
-            padding: 40px 20px;
-            margin-top: 50px;
-            border-radius: 10px;
-        }
-
-        .testimonials h2 {
-            margin-bottom: 30px;
-            color: #f1c40f;
-        }
-
-        .testimonial-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .testimonial-card {
-            background: #2a2a2a;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: left;
-        }
-
-        .user-info {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .avatar {
-            width: 50px;
-            height: 50px;
-            background-color: #555;
-            border-radius: 50%;
-            margin-right: 15px;
-        }
-
-        /* --- RODAPÉ --- */
-        footer {
-            margin-top: 50px;
-            padding: 30px;
-            font-size: 0.8rem;
-            color: #777;
-            border-top: 1px solid #333;
-        }
-
-        footer a {
-            color: #777;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        /* --- ANIMAÇÃO DO BOTÃO --- */
-        @keyframes pulse {
-            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(39, 174, 96, 0.7); }
-            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(39, 174, 96, 0); }
-            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(39, 174, 96, 0); }
-        }
-
-        /* --- RESPONSIVIDADE --- */
-        @media (max-width: 600px) {
-            .headline h1 { font-size: 1.8rem; }
-            .btn-cta { font-size: 1.2rem; padding: 15px 20px; }
+        /* Header */
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 700; }
+        .cta-button { background: #ff6b6b; color: white; padding: 12px 30px; border: none; border-radius: 50px; font-weight: 600; text-decoration: none; transition: all 0.3s; }
+        .cta-button:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(255,107,107,0.3); }
+        
+        /* Hero */
+        .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 150px 0 100px; text-align: center; }
+        .hero h1 { font-size: 3.5rem; font-weight: 700; margin-bottom: 1.5rem; }
+        .hero p { font-size: 1.3rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .main-cta { display: inline-block; background: #ff6b6b; color: white; padding: 20px 50px; border-radius: 50px; font-size: 1.2rem; font-weight: 600; text-decoration: none; margin: 20px 10px; transition: all 0.3s; }
+        .main-cta:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(255,107,107,0.4); }
+        
+        /* Features */
+        .features { padding: 100px 0; background: #f8f9fa; }
+        .features h2 { text-align: center; font-size: 2.5rem; margin-bottom: 4rem; color: #333; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .feature-card { background: white; padding: 2rem; border-radius: 20px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .feature-card:hover { transform: translateY(-10px); }
+        .feature-card img { width: 80px; height: 80px; margin-bottom: 1rem; }
+        
+        /* Speakers */
+        .speakers { padding: 100px 0; }
+        .speakers h2 { text-align: center; font-size: 2.5rem; margin-bottom: 4rem; color: #333; }
+        .speaker-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .speaker-card { text-align: center; }
+        .speaker-card img { width: 150px; height: 150px; border-radius: 50%; margin-bottom: 1rem; }
+        
+        /* Footer */
+        footer { background: #333; color: white; padding: 3rem 0 1rem; text-align: center; }
+        .affiliate-disclosure { background: #ffeaa7; padding: 1rem; margin: 2rem 0; border-radius: 10px; font-size: 0.9rem; }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .feature-grid, .speaker-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
+    <header>
+        <nav class="container">
+            <div class="logo">Influente Summit 2024</div>
+            <a href="#garanta" class="cta-button">Reservar Vaga</a>
+        </nav>
+    </header>
 
-    <div class="container">
-        <!-- Cabeçalho -->
-        <header>
-            <div class="logo">SEU LOGO AQUI</div>
-        </header>
-
-        <!-- Manchete Principal -->
-        <div class="headline">
-            <h1>Descubra o Método Secreto para <span>Transformar Sua Vida</span> em 30 Dias</h1>
-            <p class="sub-headline">Assista ao vídeo abaixo e entenda como funciona.</p>
-        </div>
-
-        <!-- Vídeo (Substitua o SRC pelo seu link do YouTube/Vimeo) -->
-        <div class="video-wrapper">
-            <!-- Exemplo de vídeo placeholder -->
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" title="Vídeo de Vendas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-        <!-- Botão de Ação -->
-        <div class="cta-section">
-            <a href="SEU_LINK_DE_CHECKOUT_AQUI" class="btn-cta">
-                QUERO GARANTIR MINHA VAGA AGORA
-                <small>Oferta por tempo limitado</small>
+    <section class="hero">
+        <div class="container">
+            <h1>O Maior Evento de Marketing Digital e Influência do Brasil</h1>
+            <p>Aprenda com os maiores experts do mercado e transforme sua presença digital. Networking com líderes, estratégias comprovadas e resultados reais.</p>
+            <div class="affiliate-disclosure">
+                <strong>🔒 Divulgação de Afiliado:</strong> Este é um link de afiliado. Faço parte do programa de afiliados oficial e recebo comissão por indicações aprovadas. Você não paga nada a mais.
+            </div>
+            <a href="https://pay.kirvano.com/7475d1d7-e475-414e-a4f2-8c268ea08459?aff=da8460ed-a8ad-45d3-b256-ba8a8125134a" class="main-cta" id="garanta">
+                Garantir Minha Vaga Agora →
             </a>
+            <p style="margin-top: 1rem; font-size: 1.1rem;"><strong>Vagas Limitadas!</strong> Oferta por tempo limitado.</p>
         </div>
+    </section>
 
-        <!-- Selo de Garantia -->
-        <div class="guarantee">
-            <p><strong>Garantia de 7 Dias</strong></p>
-            <p>Se não gostar, devolvemos 100% do seu dinheiro.</p>
-            <!-- Você pode colocar uma imagem de selo aqui -->
-        </div>
-
-        <!-- Depoimentos -->
-        <div class="testimonials">
-            <h2>O que estão dizendo:</h2>
-            <div class="testimonial-grid">
-                <!-- Depoimento 1 -->
-                <div class="testimonial-card">
-                    <div class="user-info">
-                        <div class="avatar"></div> <!-- Coloque a foto aqui -->
-                        <div>
-                            <strong>João Silva</strong><br>
-                            <small>Cliente Verificado</small>
-                        </div>
-                    </div>
-                    <p>"Eu não acreditava, mas funcionou! Recomendo muito."</p>
+    <section class="features">
+        <div class="container">
+            <h2>O Que Você Vai Aprender</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <img src="https://via.placeholder.com/80/ff6b6b/white?text=📈" alt="Crescimento">
+                    <h3>Estratégias de Crescimento</h3>
+                    <p>Como crescer sua audiência organicamente e monetizar de forma escalável.</p>
                 </div>
-                <!-- Depoimento 2 -->
-                <div class="testimonial-card">
-                    <div class="user-info">
-                        <div class="avatar"></div>
-                        <div>
-                            <strong>Maria Souza</strong><br>
-                            <small>Cliente Verificada</small>
-                        </div>
-                    </div>
-                    <p>"O suporte é incrível e o método é muito fácil de seguir."</p>
+                <div class="feature-card">
+                    <img src="https://via.placeholder.com/80/00b894/white?text=💰" alt="Monetização">
+                    <h3>Monetização Avançada</h3>
+                    <p>Métodos comprovados para gerar receita com parcerias e produtos digitais.</p>
                 </div>
-                <!-- Depoimento 3 -->
-                <div class="testimonial-card">
-                    <div class="user-info">
-                        <div class="avatar"></div>
-                        <div>
-                            <strong>Carlos Lima</strong><br>
-                            <small>Cliente Verificado</small>
-                        </div>
-                    </div>
-                    <p>"Melhor investimento que fiz este ano. Valeu cada centavo."</p>
+                <div class="feature-card">
+                    <img src="https://via.placeholder.com/80/0984e3/white?text=🤝" alt="Networking">
+                    <h3>Networking Premium</h3>
+                    <p>Conecte-se com marcas, agências e influenciadores de alto nível.</p>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Rodapé -->
-        <footer>
-            <p>&copy; 2023 Sua Empresa. Todos os direitos reservados.</p>
-            <br>
-            <a href="#">Termos de Uso</a> | <a href="#">Política de Privacidade</a> | <a href="#">Contato</a>
-            <p style="margin-top: 15px; font-size: 0.7rem;">Este site não faz parte do site do Facebook ou Facebook Inc. Além disso, este site NÃO é endossado pelo Facebook de forma alguma.</p>
-        </footer>
-    </div>
+    <section class="speakers">
+        <div class="container">
+            <h2>Palestrantes Confirmados</h2>
+            <div class="speaker-grid">
+                <div class="speaker-card">
+                    <img src="https://via.placeholder.com/150/e17055/fff?text=Expert+1" alt="Palestrante">
+                    <h3>Expert em Growth</h3>
+                    <p>100M+ seguidores gerenciados</p>
+                </div>
+                <div class="speaker-card">
+                    <img src="https://via.placeholder.com/150/00b894/fff?text=Expert+2" alt="Palestrante">
+                    <h3>Especialista em Ads</h3>
+                    <p>R$50M+ em campanhas</p>
+                </div>
+                <div class="speaker-card">
+                    <img src="https://via.placeholder.com/150/f39c12/fff?text=Expert+3" alt="Palestrante">
+                    <h3>Master em Conteúdo</h3>
+                    <p>10+ anos de experiência</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Landing Page Afiliado Influente Summit. Todos os direitos reservados.</p>
+            <p><a href="https://pay.kirvano.com/7475d1d7-e475-414e-a4f2-8c268ea08459?aff=da8460ed-a8ad-45d3-b256-ba8a8125134a" style="color: #ff6b6b;">→ Garantir Vaga Oficial</a></p>
+            <p style="font-size: 0.8rem; margin-top: 1rem;">Site criado exclusivamente para divulgação de afiliado. Não é site oficial.</p>
+        </div>
+    </footer>
 </body>
 </html>
